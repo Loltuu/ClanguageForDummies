@@ -68,3 +68,21 @@ long populacao = 10000000; # A variável é semelhante ao int, mas pode armazena
 
 short temperatura = -10; # A variável é semelhante ao int, mas ocupa menos espaço na memória.
 ```
+## Condições
+A estrutura de controle if/else é usada para executar diferentes blocos de código dependendo de uma condição. Nesse exemplo:
+```c
+if (condição) {
+  // código
+} else if (condição) {
+  // código
+} else {
+  // código
+}
+``` 
+O script avalia a primeira condição. Se ela for verdadeira, o primeiro bloco de código é executado e as demais condições são ignoradas. Se a primeira condição for falsa, a segunda condição é avaliada. Se ela for verdadeira, o segundo bloco de código é executado e as demais condições são ignoradas. Se todas as condições forem falsas, o bloco de código do else é executado.
+
+Também temos o Operador Ternário, é uma sintaxe alternativa para escrever uma instrução if/else em uma única linha de código:
+```c
+variável = (condição) ? expressãoVerdadeira : expressãoFalsa;
+```
+A variável é avaliada primeiro. Se a variável for verdadeira, o expressãoVerdadira é retornado. Caso contrário, o expressãoFalsa é retornado.
