@@ -43,3 +43,28 @@ int main() { #Esta é a declaração da função principal do programa, denomina
   return 0; #Retorna um valor inteiro de 0 ao concluir sua execução. O valor 0 é usado para indicar que o programa foi executado com sucesso.
 }
 ``` 
+## Variáveis 
+
+Em resumo, variáveis em são usadas para armazenar valores e são declaradas especificando o tipo de dado que será armazenado.
+
+```c
+int idade = 20; # A variável int é usada para armazenar números inteiros.
+
+float altura = 1.80; # A variável float é usada para armazenar números de ponto flutuante.
+
+double peso = 75.0; # A variável é semelhante ao float, mas pode armazenar números com mais casas decimais.
+
+char nome[] = "paciente"; # A variável string é usada para armazenar uma sequência de caracteres.
+
+char letra = 'x'; # A variável é usada para armazenar caracteres.
+
+bool vivo = true; # A variável é usada para armazenar valores booleanos (true ou false).
+
+void criar(){ } # A variável é usada para indicar que uma função não retorna nenhum valor.
+
+enum week {monday, tuesday, wednesday, thursday, friday}; # A variável é usada para criar um tipo de dado com um conjunto de valores pré-definidos.
+
+long populacao = 10000000; # A variável é semelhante ao int, mas pode armazenar números maiores
+
+short temperatura = -10; # A variável é semelhante ao int, mas ocupa menos espaço na memória.
+```
