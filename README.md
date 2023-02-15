@@ -6,10 +6,10 @@ C é uma linguagem de alto nível, que foi projetada por Dennis Ritchie em 1972 
 
 Irei falar alguns motivos para se aprender a linguagem de programação C:
 
-1. Amplamente utilizada
-2. Muitos recursos disponíveis
-3. Desenvolvimento de habilidades de programação
-4. Carreira em programação
+1. Eficiência
+2. Flexibilidade
+3. Portabilidade
+4. Carreira
 
 Mas antes de começarmos a criar nosso códigos, temos que aprender a base.
 
