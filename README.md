@@ -68,7 +68,7 @@ long populacao = 10000000; # A variável é semelhante ao int, mas pode armazena
 
 short temperatura = -10; # A variável é semelhante ao int, mas ocupa menos espaço na memória.
 ```
-## Condições
+## Estruturas de condição
 A estrutura de controle if/else é usada para executar diferentes blocos de código dependendo de uma condição. Nesse exemplo:
 ```c
 if (condição) {
@@ -86,3 +86,73 @@ Também temos o Operador Ternário, é uma sintaxe alternativa para escrever uma
 variável = (condição) ? expressãoVerdadeira : expressãoFalsa;
 ```
 A variável é avaliada primeiro. Se a variável for verdadeira, o expressãoVerdadira é retornado. Caso contrário, o expressãoFalsa é retornado.
+
+E também temos o Switch, o switch é usado para testar várias condições diferentes e executar um bloco de código específico para cada condição.
+```c
+switch(expressão) {
+  case x:
+    // código 
+    break;
+  case y:
+    // código
+    break;
+  default:
+    // código
+}
+```  
+## Estruturas de repetição
+O while é usado para executar um bloco de código enquanto uma condição for verdadeira.
+```c
+while (condição) {
+  // código
+}
+```
+E também temos uma variante do while que é o do/while, que executa o código dentro do bloco ao menos uma vez antes de verificar a condição, mesmo que a condição seja falsa, o código dentro do bloco será executado ao menos uma vez.
+```c
+do {
+  // código
+} while (condição);
+```
+E também temos o for, ele é diferente do while porque o while é usado para executar o código enquanto a condição for verdadeira. O for é usado para executar o código um número específico de vezes.
+```c
+for (declaração 1; declaração 2; declaração 3) {
+  // código
+}
+``` 
+## Arrays
+Arrays são estruturas de dados que armazenam um conjunto de elementos de um mesmo tipo, e ele pode armazenar qualquer tipo de elemento. O Array serve para organizar os dados.
+```c
+int numeros[] = {10, 20, 30, 40};
+```
+E Arrays multidimensionais são arrays que contêm outros arrays, ele é útil organizar dados complexos.
+```c
+int matrix[2][3] = { {1, 2, 3}, {6, 5, 4} };
+``` 
+## Memory Address
+O Memory Address é um endereço de memória que armazena um valor específico, ele é usado para manipular dados armazenados na memória. Um endereço de memória é um número único que identifica uma localização específica na memória. 
+
+E é possível acessar o endereço de memória de uma variável usando o operador &.
+```c
+int x = 10;
+printf("Endereço de memória de x: %p\n", &x);
+``` 
+## Ponteiros 
+Ponteiros são variáveis especiais em C que armazenam o endereço de memória de outras variáveis. Eles são usados para passar informações entre funções, alocar memória dinamicamente e para acessar arrays e estruturas de dados.
+```c
+int x = 10; // variável inteira
+int *ptr; // declaração de um ponteiro
+
+ptr = &x; // atribui o endereço de memória de x ao ponteiro
+
+printf("Valor de x: %d\n", x); // imprime o valor de x
+printf("Valor do ponteiro: %p\n", ponteiro); // imprime o valor do ponteiro
+```
+## Struct
+Struct é uma forma de agrupar dados de diferentes tipos em um único nome.
+```c
+struct pessoa {    // declaração
+  char nome[50];  // membro
+  int idade;     // membro
+  float altura; // membro
+};
+```
